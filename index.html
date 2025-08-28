@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clothora — Minimal Clothing Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="A minimal, responsive clothing storefront." />
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="bar">
+    <p>Free shipping on orders over ₹999 • Easy returns</p>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="header">
+    <a class="logo" href="#">Clothora</a>
+    <nav class="nav">
+      <a href="#new">New</a>
+      <a href="#men">Men</a>
+      <a href="#women">Women</a>
+      <a href="#accessories">Accessories</a>
+      <a href="#sale" class="sale">Sale</a>
+    </nav>
+    <div class="actions" aria-label="user actions">
+      <button class="icon-btn" aria-label="Search">🔎</button>
+      <button class="icon-btn" aria-label="Cart">🛒<span class="badge">0</span></button>
+      <button class="icon-btn" aria-label="Account">👤</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="new" role="banner" aria-label="Season collection hero">
+    <div class="hero__content">
+      <h1>Monsoon ‘25 Collection</h1>
+      <p>Soft cottons, relaxed fits, and weather-friendly layers designed for everyday comfort.</p>
+      <div class="hero__cta">
+        <a href="#grid" class="btn btn--primary">Shop New Arrivals</a>
+        <a href="#sale" class="btn btn--ghost">Explore Sale</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters (non-functional placeholders) -->
+  <section class="filters" aria-label="Browse filters">
+    <div class="filters__row">
+      <label>
+        <span>Category</span>
+        <select>
+          <option>All</option>
+          <option>Tees</option>
+          <option>Shirts</option>
+          <option>Dresses</option>
+          <option>Bottoms</option>
+        </select>
+      </label>
+      <label>
+        <span>Size</span>
+        <select>
+          <option>All</option>
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+      </label>
+      <label>
+        <span>Price</span>
+        <select>
+          <option>All</option>
+          <option>Under ₹999</option>
+          <option>₹1000–₹1999</option>
+          <option>₹2000–₹2999</option>
+          <option>₹3000+</option>
+        </select>
+      </label>
+      <label class="search">
+        <span class="sr-only">Search</span>
+        <input type="search" placeholder="Search products…" />
+      </label>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <main class="container" id="grid">
+    <h2>Featured Products</h2>
+    <div class="grid">
+      <!-- Card 1 -->
+      <article class="card">
+        <div class="thumb" data-label="New">
+          <div class="thumb__art" aria-hidden="true"></div>
+        </div>
+        <h3 class="card__title">Airy Cotton Tee</h3>
+        <p class="card__sub">Unisex • 6 colors</p>
+        <div class="card__price">
+          <span class="price">₹799</span>
+        </div>
+        <div class="card__cta">
+          <a href="#" class="btn btn--sm btn--primary">Add to Cart</a>
+          <a href="#" class="btn btn--sm btn--ghost">Details</a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <div class="thumb" data-label="Bestseller">
+          <div class="thumb__art" aria-hidden="true"></div>
+        </div>
+        <h3 class="card__title">Linen Blend Shirt</h3>
+        <p class="card__sub">Men • Classic fit</p>
+        <div class="card__price">
+          <span class="price">₹1,899</span>
+        </div>
+        <div class="card__cta">
+          <a href="#" class="btn btn--sm btn--primary">Add to Cart</a>
+          <a href="#" class="btn btn--sm btn--ghost">Details</a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card">
+        <div class="thumb" data-label="-20%">
+          <div class="thumb__art" aria-hidden="true"></div>
+        </div>
+        <h3 class="card__title">Everyday Chinos</h3>
+        <p class="card__sub">Men • Slim</p>
+        <div class="card__price">
+          <span class="price price--strike">₹2,299</span>
+          <span class="price">₹1,839</span>
+        </div>
+        <div class="card__cta">
+          <a href="#" class="btn btn--sm btn--primary">Add to Cart</a>
+          <a href="#" class="btn btn--sm btn--ghost">Details</a>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card">
+        <div class="thumb" data-label="Limited">
+          <div class="thumb__art" aria-hidden="true"></div>
+        </div>
+        <h3 class="card__title">Flow Midi Dress</h3>
+        <p class="card__sub">Women • Sea green</p>
+        <div class="card__price">
+          <span class="price">₹2,499</span>
+        </div>
+        <div class="card__cta">
+          <a href="#" class="btn btn--sm btn--primary">Add to Cart</a>
+          <a href="#" class="btn btn--sm btn--ghost">Details</a>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card">
+        <div class="thumb" data-label="New">
+          <div class="thumb__art" aria-hidden="true"></div>
+        </div>
+        <h3 class="card__title">Relaxed Hoodie</h3>
+        <p class="card__sub">Unisex • Fleece</p>
+        <div class="card__price">
+          <span class="price">₹1,599</span>
+        </div>
+        <div class="card__cta">
+          <a href="#" class="btn btn--sm btn--primary">Add to Cart</a>
+          <a href="#" class="btn btn--sm btn--ghost">Details</a>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="card">
+        <div class="thumb" data-label="Eco">
+          <div class="thumb__art" aria-hidden="true"></div>
+        </div>
+        <h3 class="card__title">Recycled Joggers</h3>
+        <p class="card__sub">Unisex • Tapered</p>
+        <div class="card__price">
+          <span class="price">₹1,299</span>
+        </div>
+        <div class="card__cta">
+          <a href="#" class="btn btn--sm btn--primary">Add to Cart</a>
+          <a href="#" class="btn btn--sm btn--ghost">Details</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Promo Banner -->
+  <section class="banner" id="sale" aria-label="Sale banner">
+    <h2>Season Sale — Up to 40% Off</h2>
+    <p>Grab your favorites before they’re gone. Limited stock on select styles.</p>
+    <a href="#grid" class="btn btn--light">Shop the Sale</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__cols">
+      <div>
+        <h3>Clothora</h3>
+        <p>Thoughtfully designed basics for everyday life.</p>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Track Order</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Sustainability</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get updates</h4>
+        <form class="newsletter" action="#" method="post" onsubmit="return false">
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required />
+          <button class="btn btn--primary btn--sm" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <small>© <span id="year"></span> Clothora. All rights reserved.</small>
+      <div class="social" aria-label="social links">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="Twitter / X">🐦</a>
+        <a href="#" aria-label="YouTube">▶️</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tiny inline script only for current year, no other JS needed -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
